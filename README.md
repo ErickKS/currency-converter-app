@@ -36,4 +36,4 @@
 - [x] Get the value entered by the user
 - [x] Fetch currency data within the API
 - [x] Show the data obtained from the API
-- [x] this app has 32 currencies that can be converted
+- [x] This app has 32 currencies that can be converted
