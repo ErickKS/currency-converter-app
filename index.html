@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta author="Erick Kuwahara">
+    <title>Currency Converter</title>
+
+    <!-- ICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./images/favicon/site.webmanifest">
+
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <!-- MAIN -->
+    <main>
+        <div class="container">
+            <div class="box__converter">
+                <h3>Currency Converter</h3>
+
+                <div class="box__coins">
+                    <div class="coins__single">
+                        <label for="initialValue">Value</label>
+                        <input type="number" name="initialValue" id="initialValue">
+                        <select name="currency" class="currency"></select>
+                    </div>
+                    <div class="coins__single">
+                        <label for="resultValue">Result</label>
+                        <input type="number" name="resultValue" id="resultValue" disabled>
+                        <select name="currency" class="currency"></select>
+                        <small id="alert">Choose different currencies!</small>
+                    </div>
+                </div>
+
+                <button id="convert">Convert</button>
+            </div>
+
+            <p>Developed by <a href="https://github.com/ErickKS" target="_blank">Erick Kuwahara</a></p>
+        </div>
+    </main>
+
+    <!-- JS -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
